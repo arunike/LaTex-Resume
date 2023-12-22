@@ -1,0 +1,201 @@
+% ===============================================
+% Author: Richie Zhou
+% Description: Computer Science Resume Template
+% ===============================================
+
+%-------------------- Packages --------------------
+\documentclass[letterpaper,11pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+%-------------------- Font Options --------------------
+\usepackage{times}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+% Set margins
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------- Custom commands --------------------
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small{#2}} \\
+      \small{#3} & \small{#4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+}
+
+\newcommand{\resumeSubItem}[1]{%
+  \resumeItem{#1}%
+  \vspace{-4pt}%
+}
+
+
+\newcommand{\resumeSubHeadingListStart}{%
+  \begin{itemize}[leftmargin=0.0in, label={}]%
+}
+
+\newcommand{\resumeSubHeadingListEnd}{%
+  \end{itemize}%
+  \vspace{-10pt}%
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \vspace{-2pt}\item%
+  \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}%
+    \small{#1} & \small{#2}\\%
+  \end{tabular*}%
+  \vspace{-8pt}%
+}
+
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}%
+}
+
+\newcommand{\resumeItemListEnd}{%
+  \end{itemize}%
+  \vspace{-8pt}%
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% ==================== Resume Starts Here ====================
+\begin{document}
+  %-------------------- Heading --------------------
+  \begin{center}
+    {\Large \textbf{Yujian (Richie) Zhou}} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 6466234317 ~ \href{mailto:richiezhouyjz@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ {richiezhouyjz@gmail.com}}
+    \href{https://www.linkedin.com/in/richiezhou/}{\raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/richiezhou/}}
+    \href{https://arunike.github.io/}{\raisebox{-0.2\height}\faGithub\ {arunike.github.io/}}
+  \end{center}
+  \vspace{-20pt}
+
+  %-------------------- Education --------------------
+  \section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {TBD\vspace{-3pt}}{TBD}
+            {Master of Science in Computer Science}{Sep. 2024 -- May 2025}
+            \vspace{-3pt}
+        \resumeSubheading
+            {University of Wisconsin - Madison\vspace{-3pt}}{Madison, WI}
+            {Bachelor of Science in Computer Science}{Sep. 2020 -- Dec. 2023}
+    \resumeSubHeadingListEnd
+  \vspace{-5pt}
+
+  %-------------------- Experience --------------------
+  \section{Experience}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Software Engineer Intern, Northern Trust\vspace{-3pt}} {Chicago, IL}
+        {June 2023 -- August 2023} {}
+        \resumeItemListStart
+          \resumeItem{Developed and optimized algorithms in \textbf{Java and C++} to enhance the computational efficiency of NT's Goals Driven Wealth Management platform, leading to an 8\% increase in transaction processing speed.}
+          \resumeItem{Implemented and fine-tuned \textbf{RESTful APIs using Spring Boot} for efficient data communication within investment reporting trade model microservices, achieving a 15\% enhancement in system responsiveness.}
+          \resumeItem{Conducted quantitative analysis and applied statistical techniques in \textbf{C++} to optimize cloud-based services, resulting in improved system reliability and a 12\% increase in uptime.}
+          \resumeItem{Architected and executed complex \textbf{SQL queries and data models in Snowflake}, leveraging advanced data analysis and processing skills to accelerate data extraction for investment reporting by 30\%, supporting swift data-driven decisions.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Software Developer Intern, Rockitcoin\vspace{-3pt}} {Chicago, IL}
+        {August 2022 -- March 2023} {}
+        \resumeItemListStart
+          \resumeItem{Revamped Rockitcoin's user authorization interface for mobile and web platforms using \textbf{TypeScript with React}, elevating security and usability, resulting in a 20\% increase in user retention rate.}
+          \resumeItem{Designed intuitive user interfaces for a user base of over 8,000 using \textbf{TypeScript with React}, focusing on user-friendly design and efficient real-time data interaction, leading to a 35\% improvement in user satisfaction.}
+          \resumeItem{Improved UI rendering speed by 10\% through debouncing in \textbf{React}, effectively limiting API requests from text fields.}
+          \resumeItem{Adopted \textbf{HashMap} data structures for efficient frontend user data management, achieving a 20\% improvement in data retrieval speeds. }
+      \resumeItemListEnd
+
+      \resumeSubheading
+        {Full Stack Developer Developer Intern, UNFCU\vspace{-3pt}} {New York, NY}
+        {May 2022 -- August 2022} {}
+        \resumeItemListStart
+          \resumeItem{Enhanced the dynamic saving rate recommendation page using \textbf{JavaScript, HTML, CSS, and PHP}, boosting savings account enrollment by 3\%.}
+          \resumeItem{Utilized the \textbf{Next.js} framework to architect and deploy intuitive entry pages, streamline navigation, and cohesively convey company culture, culminating in a measurable 30\% uplift in customer satisfaction rate.}
+          \resumeItem{Implemented \textbf{Python} scripts to automate loan document data extraction, enabling efficient keyword retrieval and streamlining team operations, leading to a 30\% faster deployment cycle.}
+          \resumeItem{Maintained \textbf{SQL} databases with over 150,000+ entries, creating an infrastructure for real-time reporting of key metrics like customer satisfaction, annual revenues, and sales retention rates, providing valuable insights to stakeholders.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  \vspace{-5pt}
+
+  %-------------------- Project --------------------
+  \section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/arunike/Weather-Stream-Analytic} {Weather Stream Analytic}}} {Nov. 2023}
+        \resumeItemListStart
+          \resumeItem{Implemented a \textbf{Kafka producer} for data ingestion from weather stations and a \textbf{Kafka consumer} with exactly one message processing to ensure data integrity for web dashboard summaries.}
+          \resumeItem{Utilized \textbf{Spark} Streaming for real-time data processing, generating datasets for ML applications in weather forecasting.}
+          \resumeItem{Maintaining data accuracy and developing predictive models for weather analysis, leveraging \textbf{Spark's} capabilities for dynamic temperature averaging and forecast modeling.}
+        \resumeItemListEnd
+            
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/arunike/Five-Course-Bird-Feeder-Frontend} {Five Course Bird Feeder}}} {Spring 2023}
+        \resumeItemListStart
+          \resumeItem{Developed a responsive front-end Interface using \textbf{TypeScript with React}, fascinating user interactions through live and recorded video streaming of the user's bird feeder.}
+          \resumeItem{Implemented a versatile backend \textbf{Spring Boot API} supporting dynamic bird feeding schedules, user profile management, and real-time streaming of bird feeder cameras, enhancing user engagement and interactive experience.}
+          \resumeItem{Integrated ML and image labeling techniques using \textbf{Python (Tensorflow)} to analyze bird visitation patterns, generating insightful statistics on bird species, frequency of visits, and visitation times displayed through interactive graphs and tables.}
+        \resumeItemListEnd 
+          
+      \resumeProjectHeading
+      {\textbf{\href{https://github.com/arunike/} {Online Shop}}} {Summer 2022}
+      \resumeItemListStart
+        \resumeItem{Developed an intuitive online shopping platform using \textbf{Spring Boot}, enhancing the shopping experience for users.}
+        \resumeItem{Utilized the \textbf{Redis} in-memory data structure to facilitate real-time product search and optimize shopping cart functionality.}
+        \resumeItem{Modified the \textbf{JavaScript API} to streamline communication between buyers and sellers, improving transaction processing.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  \vspace{-5pt}
+  
+  %-------------------- Skills --------------------
+  \section{Technical Skills}
+    \begin{itemize}[leftmargin=0.00in, label={}]
+        \small{\item{
+          \textbf{Programming Languages:} {Java, C/C++, Python, R, SQL, JavaScript, TypeScript} \\
+          \textbf{Frameworks and Libraries:} {React, Vue, Spring Boot} \\
+          \textbf{Tools and Technologies:} {HTML, CSS, Cassandra, Kafka, Spark, Snowflake, Firebase, Redis, NodeJS, Docker, Kotlin} \\
+        }}
+    \end{itemize}
+\end{document}
