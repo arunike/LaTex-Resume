@@ -89,11 +89,17 @@
 
 \newcommand{\resumeItemListStart} {
   \begin{itemize}
+  \vspace{-4pt}
 }
 
 \newcommand{\resumeItemListEnd} {
   \end{itemize}
   \vspace{-8pt}
+}
+
+\newcommand{\resumeProjectItemListStart} {
+  \begin{itemize}
+  \vspace{-15pt}
 }
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -104,7 +110,7 @@
   %-------------------- Heading --------------------
   \begin{center}
     {\Large \textbf{Yujian (Richie) Zhou}} \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 6466234317 ~
+    \small \raisebox{-0.1\height}\faPhone\ (646)-623-4317 ~
     \href{mailto:richiezhouyjz@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ {richiezhouyjz@gmail.com}}
     \href{https://www.linkedin.com/in/richiezhou/}{\raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/richiezhou/}}
     \href{https://arunike.github.io/}{\raisebox{-0.2\height}\faGithub\ {arunike.github.io/}}
@@ -122,7 +128,7 @@
           {\textbf{\href{https://cdis.wisc.edu/} {University of Wisconsin - Madison\vspace{-3pt}}}} {Madison, WI}
           {Bachelor of Science in Computer Science} {Sep. 2020 -- Dec. 2023}
     \resumeSubHeadingListEnd
-  \vspace{-5pt}
+  \vspace{-7pt}
 
   %-------------------- Experience --------------------
   \section{Experience}
@@ -164,7 +170,7 @@
     \resumeSubHeadingListStart
       \resumeProjectHeading
         {\textbf{\href{https://github.com/arunike/Weather-Stream-Analytic} {Weather Stream Analytic}}} {Nov. 2023}
-        \resumeItemListStart
+        \resumeProjectItemListStart
           \resumeItem{Implemented a \textbf{Kafka producer} for data ingestion from weather stations and a \textbf{Kafka consumer} with exactly one message processing to ensure data integrity for web dashboard summaries.}
           \resumeItem{Utilized \textbf{Spark} Streaming for real-time data processing, generating datasets for ML applications in weather forecasting.}
           \resumeItem{Maintaining data accuracy and developing predictive models for weather analysis, leveraging \textbf{Spark's} capabilities for dynamic temperature averaging and forecast modeling.}
@@ -172,7 +178,7 @@
             
       \resumeProjectHeading
         {\textbf{\href{https://github.com/arunike/Five-Course-Bird-Feeder-Frontend} {Five Course Bird Feeder}}} {Spring 2023}
-        \resumeItemListStart
+        \resumeProjectItemListStart
           \resumeItem{Developed a responsive front-end Interface using \textbf{TypeScript with React}, fascinating user interactions through live and recorded video streaming of the user's bird feeder.}
           \resumeItem{Implemented a versatile backend \textbf{Spring Boot API} supporting dynamic bird feeding schedules, user profile management, and real-time streaming of bird feeder cameras, enhancing user engagement and interactive experience.}
           \resumeItem{Integrated ML and image labeling techniques using \textbf{Python (Tensorflow)} to analyze bird visitation patterns, generating insightful statistics on bird species, frequency of visits, and visitation times displayed through interactive graphs and tables.}
@@ -180,7 +186,7 @@
           
       \resumeProjectHeading
       {\textbf{\href{https://github.com/arunike/} {Online Shop}}} {Summer 2022}
-      \resumeItemListStart
+      \resumeProjectItemListStart
         \resumeItem{Developed an intuitive online shopping platform using \textbf{Spring Boot}, enhancing the shopping experience for users.}
         \resumeItem{Utilized the \textbf{Redis} in-memory data structure to facilitate real-time product search and optimize shopping cart functionality.}
         \resumeItem{Modified the \textbf{JavaScript API} to streamline communication between buyers and sellers, improving transaction processing.}
